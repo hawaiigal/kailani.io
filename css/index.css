@@ -1,0 +1,176 @@
+body {
+	height: 100vh;
+
+}
+
+.outside {
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+
+	min-height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	resize: both;
+	overflow: visible;
+}
+
+.hello {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	animation: 0.75s fadein;
+	animation-fill-mode: forwards;
+
+	visibility: hidden;
+}
+
+
+/**********************************************************
+THE ABOUT SECTION
+***********************************************************/
+.about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 1em auto;
+	justify-content: center;
+}
+
+.about-item {
+	/* background: #00974e; */
+	background-color: #3fb0ac;
+	/* background-color: #677077; */
+	/* background-color: #06000a; */
+
+	margin: .4em .6em;
+	padding: .9em .4em .2em .2em;
+
+	max-width: 35em;
+	max-height: 20em;
+	border-radius: 6px;
+
+	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0,.5);
+	animation: 1.5s ease-in-out 0s 1 slideInFromBottom;
+
+
+}
+
+#first {
+	animation-delay: 0s;
+}
+
+#second {
+	animation-delay: 0.1s;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about-icon {
+	width: 40px;
+	min-height: auto;
+
+	display: inline-block;
+	padding: 7px;
+	margin: 0.2em auto;
+
+	border-radius: 60px;
+	border: 2px solid #add9c3;
+
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .25);
+}
+
+.about-icon img {
+	height: 40px;
+	width: auto;
+}
+
+.about-description {
+	max-width: 20em;
+	margin: .67em auto;
+}
+
+
+/**********************************************************
+EXTERNAL LINKS AND ICONS
+**********************************************************/
+.external {
+
+	/* position: fixed;
+	bottom: 0; */
+	margin: .67em auto;
+	margin-bottom: .8em;
+	display: block;
+	overflow: hidden;
+
+	animation: 1s fadein;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+
+	visibility: hidden;
+
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.external-link {
+	text-decoration: none;
+	margin: 2px;
+}
+
+.external-link:visited {
+	text-decoration: none;
+}
+
+.external-link img{
+	text-decoration: none;
+	height: 20px;
+	width: auto;
+}
+
+.resume {
+	line-height: 1.2em;
+}
+
+/**********************************************************
+GENERAL ELEMENT STYLING
+**********************************************************/
+
+h1 {
+	max-width: 50em;
+	font-size: 50px;
+	margin: .4em;
+	font-weight: 250;
+}
+
+h2 {
+	max-width: 25em;
+	font-size: 20px;
+	line-height: 1.2em;
+	margin: .40em;
+	font-weight: 100;
+}
+
+p {
+	line-height: 1.2em;
+}
