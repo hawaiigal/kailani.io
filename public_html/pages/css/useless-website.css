@@ -1,46 +1,41 @@
 #title {
 	font-size: 24px;
 	font-weight: bold;
+}
+
+p {
 	margin: 4px;
 	margin-top: 8px;
-
 }
 
 #submit {
-	font-size: 14px;
-	margin-top: 4px;
-	background-color: #F58A07;
+	font-size: 18px;
+	margin-top: 6px;
+	background-color: #909CC2;
 	display: inline-block;
 	cursor: pointer;
 
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	border-radius:28px;
 	border-style: none;
-
 }
 
 
-/*
-.myButton {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
-.myButton:hover {
-	background-color:#5cbf2a;
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-*/

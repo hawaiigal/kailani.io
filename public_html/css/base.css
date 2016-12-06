@@ -67,3 +67,13 @@ h1 {
 h2 {
 	font-size: 24px;
 }
+
+.back {
+	text-align: left;
+	padding-top: 4px;
+	margin-left: 12px;
+}
+
+.back:visited {
+	color: #F2F2F2;
+}
