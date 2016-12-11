@@ -4,6 +4,7 @@ function output() {
 }
 
 function triggerEnter() {
-	if (event.keyCode==13)
+	if (event.keyCode==13) {
 		document.getElementById("submit").click();
+	}
 }
