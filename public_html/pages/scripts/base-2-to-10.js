@@ -9,16 +9,21 @@ function calculate() {
 	var power = 0;
 	var result = 0;
 
-	while (base2.length > 0) {
-		if (base2.charAt(base2.length - 1) == 1) {
-			result += Math.pow(2, power);
-			base2 = base2.substring(0, base2.length - 1);
-			power++;
+	if(isNaN(base2))
+		document.getElementById("output").innerHTML = "Please enter a valid base 2 number";
+	else {
+		while (base2.length > 0) {
+			if (base2.charAt(base2.length - 1) == 1) {
+				result += Math.pow(2, power);
+				base2 = base2.substring(0, base2.length - 1);
+				power++;
+			}
+			else {
+				base2 = base2.substring(0, base2.length - 1);
+				power++;
+			}
 		}
-		else {
-			base2 = base2.substring(0, base2.length - 1);
-			power++;
-		} 
+		document.getElementById("output").innerHTML = result;
 	}
-	document.getElementById("output").innerHTML = result;
+	
 }
