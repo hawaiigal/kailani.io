@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Base 2 to Base 10 Conversion</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/base-10-to-2.css">
+	<script src="scripts/base-2-to-10.js"></script>
+</head>
+
+<html>
+	<body>
+		<div class="back">
+			<a href="https://alec.ge">← back</a>
+		</div>
+		
+		<p id="title">Enter a number in base 2 to get its value in base 10</p>
+		<input type="text" name="userInput" id="userInput" onkeydown="triggerEnter()" autocomplete="off"><br>
+
+		<a href="#" class="hvr-shrink">
+			<input type="button" id="submit" value="Submit" onclick="calculate()">
+		</a>
+
+		<p id="output"></p>
+	</body>
+</html>
