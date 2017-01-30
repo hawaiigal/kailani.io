@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/alecge
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alec.ge
+  * I am alecge (https://keybase.io/alecge) on keybase.
+  * I have a public key with fingerprint 8561 EF83 B83A C1DF 4FF4  A6EF 2CD0 EA57 21E8 42F1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017615ef5aff9f514edf7dd8175d0ddfd3edcdc42de13e80333b5782909ee207e90a",
+            "fingerprint": "8561ef83b83ac1df4ff4a6ef2cd0ea5721e842f1",
+            "host": "keybase.io",
+            "key_id": "2cd0ea5721e842f1",
+            "kid": "01017615ef5aff9f514edf7dd8175d0ddfd3edcdc42de13e80333b5782909ee207e90a",
+            "uid": "9bac4459da7eaff534c2900759955d19",
+            "username": "alecge"
+        },
+        "service": {
+            "hostname": "alec.ge",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484624489,
+    "expire_in": 157680000,
+    "prev": "9d46bbd5152f39fbb468503754869d7868bbe2d85c54779571718bcbbfb1472f",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIhAnicrZJfSBRBHMdPzc7EyIoS6kHZKzC4vJ3dmf1zkZRSEYUPEiamXDs7M9dy
+enverZrIVVAdQkaWZVkYUWSRISZRUCFpf8iMIoiyMCqot6LyxcDKZqWghx6bl2F+
+8/l+5/v7MXfnZniy0/JrzldcWuRdnzY61N7gqUwesVoEbJNmIdgiROjMRmsJTTih
+iEWEoCACEagKQJQhgzGdIQApYSohGlAREQlhRKbEJCaUCAUy1URZljFSNUkXdUol
+UaW6aAh+gVnRMI3H4lbU4bYaUgBlmow12TABYZAxaCiUSSYRqYFUCVANSgxw4Q47
+4Sp4OGwkaJFl8xo/hGbi/YP/z7kbZux0bJgQIp0YKuV+SIYmB0UV6TpCBOgumKDx
+qFFHOW3UUjNMhaRf4LVGy6TuWN0+/rov4oBfiMVtxzbtWl7c4TixRNAVOc0xl2qi
+OPRbH8JWlPABckUjjScsOyoEASdNx3INAdSgIkGo6X6B7oxZcRqyXAKpiiby5b5D
+G902CFQwJgggick6wxgqGhJlFUFN0YmqKRrGVCIaMhFUVR2pQAUaNjFmGEBVYoLb
+UX3UFoIyj2mEuWXCCkcNpyHO2x2+XT3Lk5btmZ2Z7n4sT/ac3D/fbVu+98d8/2TB
+oC843nKaThcXRvL3n12zfOPStJ6KY4uup0ZOeMrry64t6w2nO4eKWx8pqd7VxVPC
+3uc45u+4PJYz78m5LwtXrZsqe2cfLvV9HG9PNKf6xlNZubfqHk9szvSN9cu7SrMC
+J5NLapumrla2Ki/sM3krs1sDdkfmrgOXnp3PaeucVbRHqbE2pUe6R059avjwdFSM
+rPop9wyfe1uAqqq2lHbv76su3L1m71ofyx1q+hbpuhy4lzye1xXIm/Zu2Hpxe9/N
+xQuGK5p7M4yBO68mXhfBTStu9A96j06+7Pw8oJfMXvvmvlV/petg4Gve5Ht5H6k7
+Gcm5UPLwQXn99462gd2/AJcZNeM=
+=/V0o
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alecge
+
+==================================================================
+
