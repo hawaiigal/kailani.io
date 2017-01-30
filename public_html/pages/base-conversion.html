@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Base Converter </title>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/pages.css">
+	
+	<script src="scripts/base-10-to-2.js"></script>
+</head>
+
+<body>
+	<div class="back">
+		<a href="https://alec.ge">← back</a>
+	</div>
+
+	<p id="title">Base Converter</p>
+
+	<input type="number" id="userInput" onkeydown="triggerEnter()" autocomplete="off">
+
+	<div class="select">
+		<form id="fromBase">
+			<input type="radio" value="2">2<br>
+			<input type="radio" value="10">10<br>
+		</form>
+
+		<form id="toBase">
+			<input type="radio" value="2">2<br>
+			<input type="radio" value="10">10<br>
+		</form>
+	</div>
+
+	<a href="#" class="hvr-shrink">
+		<input type="button" id="submit" value="Submit" onclick="calculate()">
+	</a>
+</body>
