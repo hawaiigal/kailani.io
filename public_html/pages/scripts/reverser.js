@@ -13,9 +13,17 @@ function reverse() {
 
     for (var i = input.length - 1; i >= -1; i -= 1) {
         temp += input.charAt(i);
-        console.log(temp);
     }
     
-    console.log(temp);
+    if (document.getElementById("replaceChar").checked) {
+        
+    }
+    
     document.getElementById("output").innerHTML = temp;
+}
+
+function replaceChar() {
+    var mapping = { "e": "ɘ", } 
+    
+    
 }
