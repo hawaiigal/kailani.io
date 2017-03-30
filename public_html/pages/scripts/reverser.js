@@ -47,11 +47,8 @@ function replaceChar(original) {
                     "w": "ʍ",
                     "x": "x",
                     "y": "ʎ",
-                    "z": "z" };
-
-    var jsonified = JSON.stringify(mapping);
-    localStorage.setItem("map", jsonified);
-    stringified = localStorage.getItem("map");
+                    "z": "z",
+                    " ": " "};
 
     var reverseTemp = "";
     for (var i = 0; i < original.length; i += 1) {
