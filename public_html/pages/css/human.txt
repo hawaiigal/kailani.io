@@ -1,3 +1,0 @@
-hover.css was used in this web page.
-
-See: https://github.com/IanLunn/Hover
