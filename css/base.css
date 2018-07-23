@@ -54,7 +54,7 @@ table {
 ---------------------------------------------------------------------*/
 
 body {
-	background-color: #293241;
+	background-color: #074c70;
 	color: #F2F2F2;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -62,21 +62,11 @@ body {
 }
 a {
 	color: #F2F2F2;
+	text-decoration: none;
+
 }
 a:visited {
 	color: #F2F2F2;
-}
+	text-decoration: none;
 
-h1 {
-	font-size: 36px;
-	margin: 4px;
-}
-h2 {
-	font-size: 24px;
-}
-
-.back {
-	text-align: left;
-	padding-top: 4px;
-	margin-left: 12px;
 }
