@@ -19,6 +19,10 @@
 	visibility: hidden;
 }
 
+
+/**********************************************************
+THE ABOUT SECTION
+***********************************************************/
 .about {
 	display: flex;
 	flex-direction: row;
@@ -64,16 +68,15 @@
 }
 
 .about-icon {
-	margin: 0.2em auto;
 	width: 40px;
 	min-height: auto;
-	display: inline-block;
-	border-radius: 60px;
-	padding: 7px;
-	/* background:  #add9c3; */
 
+	display: inline-block;
+	padding: 7px;
+	margin: 0.2em auto;
+
+	border-radius: 60px;
 	border: 2px solid #add9c3;
-	/* border: 2px solid #fae596; */
 
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .25);
 }
@@ -88,13 +91,14 @@
 	margin: .67em auto;
 }
 
+
+/**********************************************************
+EXTERNAL LINKS AND ICONS
+**********************************************************/
 .external {
 	margin: .67em auto;
 	position: absolute;
 	bottom: 0;
-	/* display: none; */
-	/* opacity: 0; */
-
 
 	animation: 1s fadein;
 	animation-delay: 1s;
@@ -134,7 +138,9 @@
 	line-height: 1.2em;
 }
 
-
+/**********************************************************
+GENERAL ELEMENT STYLING
+**********************************************************/
 
 h1 {
 	max-width: 50em;
@@ -154,13 +160,3 @@ h2 {
 p {
 	line-height: 1.2em;
 }
-
-/*
-		<div class="section footer">
-			<p>Get in touch at me
-				<!-- >@. -->@
-				<!-- >@. -->alec
-				<!-- >@. -->.
-				<!-- >@. -->ge</p>
-		</div>
-*/
