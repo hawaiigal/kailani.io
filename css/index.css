@@ -9,8 +9,8 @@
 } */
 
 .outside {
-	height: 100vh;
-	margin: 0 auto;
+	height: 100%;
+	/* margin: 0 auto; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,31 +19,79 @@
 	overflow: auto;
 }
 
-h1 {
-	max-width: 50em;
-	font-size: 50px;
-	margin: .67em;
-	font-weight: 250;
+.hello {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-h2 {
+.about {
+	display: block;
+	margin: 1em auto;
+}
+
+.about-item {
+	float: left;
+}
+
+.about-icon {
+	min-width: 40px;
+	min-height: auto;
+	display: inline-block;
+	border-radius: 60px;
+	padding: 7px;
+	background:  #00974e;
+}
+
+.about-icon img {
+	height: 40px;
+	width: auto;
+}
+
+.about-description {
 	max-width: 20em;
-	font-size: 20px;
-	line-height: 1.2em;
-	margin: .67em;
-	font-weight: 100;
+	margin: .67em auto;
 }
 
 .external {
 	margin: .67em auto;
+	position: absolute;
+	bottom: 0;
 }
 
-img {
+.external-link {
+	text-decoration: none;
 	margin: 2px;
-	height: 18px;
+}
+
+.external-link:visited {
+	text-decoration: none;
+}
+
+.external-link img{
+	text-decoration: none;
+	height: 20px;
 	width: auto;
 }
 
+h1 {
+	max-width: 50em;
+	font-size: 50px;
+	margin: .4em;
+	font-weight: 250;
+}
+
+h2 {
+	max-width: 25em;
+	font-size: 20px;
+	line-height: 1.2em;
+	margin: .40em;
+	font-weight: 100;
+}
+
+p {
+	line-height: 1.2em;
+}
 
 /*
 		<div class="section footer">
