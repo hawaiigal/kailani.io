@@ -2,7 +2,7 @@ html, body, div, h1, h2, h3, h4, p, i, b, a, ul{
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
-    line-height: 1.23em;
+    line-height: 1.3em;
 }
 
 a {
@@ -28,7 +28,7 @@ a:visited {
     clear: left;
 } */
 
-.resume {
+body {
     width: 8.5in;
     height: 11in;
     /* background-color: rgba(0, 0, 0, 0.02); */
@@ -36,11 +36,16 @@ a:visited {
     border: 1px solid #CCCCCC;
 
     margin: 1em auto;
+}
 
+.resume {
+    margin:.2in .8in;
+    overflow: hidden;
 }
 
 .header {
     width: 100%;
+    font-size: 13pt;
 }
 
 .name {
@@ -50,18 +55,23 @@ a:visited {
 
 .section {
     width: auto;
-    margin: 0.15in 0.6in;
+    margin-top: .08in;
 }
 
 .section-title {
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: black;
+    font-size: 16pt;
 }
 
 .entry {
     display: block;
-    margin-top: 0.1in;
+    margin-top: 0.07in;
+}
+
+.entry h4 {
+    font-size: 14pt;
 }
 
 .description {
@@ -70,11 +80,15 @@ a:visited {
     display: block;
 }
 
+.annotation {
+    font-style: italic;
+}
+
 .details {
     display: block;
     margin-left: 1.5em;
     margin-right: 0em;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 .skills .entry h4 {
@@ -89,15 +103,22 @@ a:visited {
     margin-left: 1.5in;
 }
 
+.reference {
+    margin: .2in auto;
+}
+
 @media print {
     @page {
         margin: 0;
     }
 
-    .resume {
+    body {
         margin: 0;
+        padding: 0;
         border: none;
         box-shadow: none;
+        overflow: hidden;
+
     }
 
     a, a:visited {
