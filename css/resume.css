@@ -39,18 +39,18 @@ body {
 }
 
 .resume {
-    margin:.2in .8in;
+    margin:.2in .6in;
     overflow: hidden;
 }
 
 .header {
     width: 100%;
-    font-size: 13pt;
+    font-size: 12pt;
 }
 
 .name {
-    padding-top: 0.4in;
-    padding-bottom: 0.15in;
+    padding-top: 0.25in;
+    padding-bottom: 0.1in;
 }
 
 .section {
@@ -62,16 +62,16 @@ body {
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: black;
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 .entry {
     display: block;
-    margin-top: 0.07in;
+    margin-top: 0.05in;
 }
 
 .entry h4 {
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .description {
@@ -88,7 +88,7 @@ body {
     display: block;
     margin-left: 1.5em;
     margin-right: 0em;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .skills .entry h4 {
@@ -119,6 +119,10 @@ body {
         box-shadow: none;
         overflow: hidden;
 
+    }
+
+    html {
+        overflow: hidden;
     }
 
     a, a:visited {
