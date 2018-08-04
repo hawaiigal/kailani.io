@@ -1,11 +1,21 @@
+body {
+	height: 100vh;
+
+}
+
 .outside {
-	height: 100%;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	resize: both;
-	overflow: auto;
+	overflow: visible;
 }
 
 .hello {
@@ -97,8 +107,8 @@ EXTERNAL LINKS AND ICONS
 **********************************************************/
 .external {
 	margin: .67em auto;
-	position: absolute;
-	bottom: 0;
+	display: block;
+	overflow: scroll;
 
 	animation: 1s fadein;
 	animation-delay: 1s;
