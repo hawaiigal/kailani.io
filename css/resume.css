@@ -35,11 +35,11 @@ body {
     box-shadow: 2px 2px 4px #AAAAAA;
     border: 1px solid #CCCCCC;
 
-    margin: 1em auto;
+    margin: 0.8em auto;
 }
 
 .resume {
-    margin:.2in .6in;
+    margin:.3in .6in;
     overflow: hidden;
 }
 
@@ -50,7 +50,11 @@ body {
 
 .name {
     padding-top: 0.25in;
-    padding-bottom: 0.1in;
+    padding-bottom: 0.05in;
+}
+
+.about {
+    margin-top: 0;
 }
 
 .section {
@@ -104,7 +108,8 @@ body {
 }
 
 .reference {
-    margin: .2in auto;
+    margin: .3in auto;
+
 }
 
 @media print {
