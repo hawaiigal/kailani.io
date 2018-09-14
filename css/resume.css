@@ -39,7 +39,7 @@ body {
 }
 
 .resume {
-    margin:.3in .6in;
+    margin:.2in .5in;
     overflow: hidden;
 }
 
@@ -72,10 +72,12 @@ body {
 .entry {
     display: block;
     margin-top: 0.05in;
+    margin-left: 0;
 }
 
 .entry h4 {
     font-size: 13pt;
+    margin-left: 0;
 }
 
 .description {
@@ -92,14 +94,14 @@ body {
     display: block;
     margin-left: 1.5em;
     margin-right: 0em;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
-.skills .entry h4 {
+.skills > .entry > h4 {
     vertical-align: top;
     display: inline-block;
     position: absolute;
-    margin-left: .25in;
+    /* margin-left: .25in; */
 }
 
 .skills .entry div {
