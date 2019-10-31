@@ -71,10 +71,6 @@ a:visited {
 	color: #F2F2F2;
 }
 
-html {
-	overflow: hidden;
-}
-
 ::-webkit-scrollbar {
 	width: 0px;
 	background: transparent; /* make scrollbar transparent */
