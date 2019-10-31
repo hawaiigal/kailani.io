@@ -28,10 +28,14 @@ a:visited {
     clear: left;
 } */
 
+html {
+    background: #EEF2F5;
+}
+
 body {
     width: 8.5in;
     height: 11in;
-    /* background-color: rgba(0, 0, 0, 0.02); */
+    background: #FFFFFF;
     box-shadow: 2px 2px 4px #AAAAAA;
     border: 1px solid #CCCCCC;
 
