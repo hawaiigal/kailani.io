@@ -1,4 +1,4 @@
-# alec.ge
+# kailani.io
 
 ### Javascript-free (GNU-friendly) since July 2018!
 
