@@ -43,7 +43,7 @@ body {
 }
 
 .resume {
-    margin:.3in .5in;
+    margin:.5in .6in;
     overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
 
 .section {
     width: auto;
-    margin-top: .02in;
+    margin-top: .1in;
     margin-bottom: 0;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .entry {
     display: block;
-    margin-top: 0.05in;
+    margin-top: 0.07in;
     margin-left: 0;
 }
 
