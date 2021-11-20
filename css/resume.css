@@ -43,7 +43,7 @@ body {
 }
 
 .resume {
-    margin:.55in .6in;
+    margin: 0.6in .65in;
     overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
 
 .section {
     width: auto;
-    margin-top: .1in;
+    margin-top: .15in;
     margin-bottom: 0;
 }
 
@@ -89,7 +89,7 @@ body {
     margin-left: 1em;
     margin-right: 0em;
     display: block;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.3em;
 }
 
 .annotation {
