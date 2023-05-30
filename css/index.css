@@ -52,6 +52,7 @@ THE ABOUT SECTION
 
 	max-width: 35em;
 	max-height: 20em;
+	min-width: 20em;
 	border-radius: 6px;
 
 	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0,.5);
