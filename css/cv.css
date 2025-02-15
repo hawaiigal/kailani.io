@@ -1,8 +1,23 @@
-html, body, div, h1, h2, h3, h4, p, i, b, a, ul{
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+i,
+b,
+a,
+ul {
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
     line-height: 1.3em;
+}
+
+div, span, ul, li {
+    font-size: 12pt;
 }
 
 a {
@@ -11,6 +26,10 @@ a {
 
 a:visited {
     text-decoration: none;
+}
+
+li {
+    margin-bottom: 2px;
 }
 
 .center {
@@ -22,11 +41,6 @@ a:visited {
     float: right;
     clear: right;
 }
-
-/* .left {
-    float: left;
-    clear: left;
-} */
 
 html {
     background: #EEF2F5;
@@ -48,7 +62,7 @@ body {
 }
 
 .resume {
-    margin: 0.35in .50in;
+    margin: 0.75in .75in;
     overflow: hidden;
 }
 
@@ -57,18 +71,13 @@ body {
     font-size: 11.5pt;
 }
 
-.name {
-    /* padding-top: 0.15in; */
-    /* padding-bottom: 0.03in; */
-}
-
 .about {
     margin-top: 0;
 }
 
 .section {
     width: auto;
-    margin-top: .15in;
+    margin-top: .1in;
     margin-bottom: 0;
 }
 
@@ -86,7 +95,7 @@ body {
 }
 
 .entry h4 {
-    font-size: 12.5pt;
+    font-size: 13pt;
     margin-left: 0;
 }
 
@@ -97,9 +106,22 @@ body {
     padding-bottom: 0.3em;
 }
 
-.annotation {
+.position {
+    font-size: 12pt;
+    margin-bottom: 2px;
+}
+
+.position>.left {
     font-style: italic;
-    font-size: 11.5pt;
+    font-weight: 500;
+}
+
+.position>.right {
+    /* font-weight: 0; */
+}
+
+.italic {
+    font-style: italic;
 }
 
 .details {
@@ -109,7 +131,7 @@ body {
     font-size: 11.5pt;
 }
 
-.skills > .entry > h4 {
+.skills>.entry>h4 {
     vertical-align: top;
     display: inline-block;
     position: absolute;
@@ -123,28 +145,29 @@ body {
 
 .reference {
     margin: .3in auto;
-
 }
 
 @media print {
     @page {
+        size: letter portrait;
         margin: 0;
     }
 
-    body {
+    .outer {
         margin: 0;
         padding: 0;
         border: none;
         box-shadow: none;
         overflow: hidden;
-
+        page-break-after: always;
     }
 
-    html {
+    /* html {
         overflow: hidden;
-    }
+    } */
 
-    a, a:visited {
+    a,
+    a:visited {
         color: #000000;
     }
 }
