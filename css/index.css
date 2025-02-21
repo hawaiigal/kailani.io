@@ -106,3 +106,23 @@ p {
 
 	filter: invert(19%) sepia(11%) saturate(3722%) hue-rotate(228deg) brightness(93%) contrast(92%);
 }
+
+@media (max-width: 500px) {
+  .outer {
+		width: 100vw;
+		height: 90vh;
+	}
+
+	.links {
+		margin-left: 0;
+	}
+	
+	.container {
+		width: 90%;
+		margin-left: 5px;
+    position: initial;
+    top: 0;
+    left: 0;
+    transform: initial;
+  }
+}
