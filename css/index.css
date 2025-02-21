@@ -4,7 +4,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column wrap;
-	background-color: #452c63;
+	background-color: #DBBCDF;
 	/* background-color: #DDA0DDBB; */
 	width: 100vw;
 }
@@ -24,7 +24,7 @@ body {
 	align-items: flex-end;
 	justify-content: left;
 	gap: 10px;
-	color: #FDFDFC;
+	color: #452c63;
 	margin: 10px;
 	width: 100%;
 }
@@ -38,7 +38,6 @@ body {
 
 .container {
 	border-radius: 20px;
-	border-color: #452c63;
 	background-color: #FDFDFC;
 
 	padding: 70px 10px;
@@ -104,4 +103,6 @@ p {
 	text-decoration: none;
 	height: 40px;
 	width: auto;
+
+	filter: invert(19%) sepia(11%) saturate(3722%) hue-rotate(228deg) brightness(93%) contrast(92%);
 }
