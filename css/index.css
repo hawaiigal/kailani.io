@@ -1,177 +1,108 @@
 body {
 	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	background-color: #452c63;
+	/* background-color: #DDA0DDBB; */
+	width: 100vw;
+}
+
+.outer {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: column wrap;
+	width: 60vw;
+	min-width: 200px;
+	max-width: 1200px;
+}
+
+.header {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: left;
+	gap: 10px;
+	color: #FDFDFC;
+	margin: 10px;
+	width: 100%;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 40pt;
+	margin: 0;
+	float: left;
+}
+
+.container {
+	border-radius: 20px;
+	border-color: #452c63;
+	background-color: #FDFDFC;
+
+	padding: 70px 10px;
+	width: 100%;
+	color: #452c63;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	gap: 50px;
+
+	box-shadow: 8.0px 12.0px 12.0px hsl(0deg 0% 0% / 0.38);
 
 }
 
-.outside {
-	/* position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
+.item {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
 
-	min-height: 90%;
+.item>img {
+	height: 70px;
+	filter: invert(19%) sepia(11%) saturate(3722%) hue-rotate(228deg) brightness(93%) contrast(92%);
+}
+
+.description {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	resize: both;
-	overflow: visible;
+	gap: 10px;
 }
 
-.hello {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	animation: 0.75s fadein;
-	animation-fill-mode: forwards;
-
-	visibility: hidden;
+h3 {
+	font-weight: 700;
+	font-size: 24pt;
 }
 
-
-/**********************************************************
-THE ABOUT SECTION
-***********************************************************/
-.about {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 1em auto;
-	justify-content: center;
-}
-
-.about-item {
-	/* background: #00974e; */
-	background-color: #3fb0ac;
-	/* background-color: #677077; */
-	/* background-color: #06000a; */
-
-	margin: .4em .6em;
-	padding: .9em .4em .2em .2em;
-
-	max-width: 35em;
-	max-height: 20em;
-	min-width: 20em;
-	border-radius: 6px;
-
-	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0,.5);
-	animation: 1.5s ease-in-out 0s 1 slideInFromBottom;
-
-
-}
-
-#first {
-	animation-delay: 0s;
-}
-
-#second {
-	animation-delay: 0.1s;
-}
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100vh);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.about-icon {
-	width: 40px;
-	min-height: auto;
-
-	display: inline-block;
-	padding: 7px;
-	margin: 0.2em auto;
-
-	border-radius: 60px;
-	border: 2px solid #add9c3;
-
-	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .25);
-}
-
-.about-icon img {
-	height: 40px;
-	width: auto;
-}
-
-.about-description {
-	max-width: 20em;
-	margin: .67em auto;
+p {
+	font-size: 14pt;
+	max-width: 400px;
+	line-height: 1.2em;
 }
 
 
-/**********************************************************
-EXTERNAL LINKS AND ICONS
-**********************************************************/
-.external {
-
-	/* position: fixed;
-	bottom: 0; */
-	margin: .67em auto;
-	margin-bottom: .8em;
-	display: block;
-	overflow: hidden;
-
-	animation: 1s fadein;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-
-	visibility: hidden;
-
-}
-
-@keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		visibility: visible;
-		opacity: 1;
-	}
+.links {
+	margin-left: auto;
 }
 
 .external-link {
 	text-decoration: none;
-	margin: 2px;
+	margin: 4px;
 }
 
 .external-link:visited {
 	text-decoration: none;
 }
 
-.external-link img{
+.external-link img {
 	text-decoration: none;
-	height: 20px;
+	height: 40px;
 	width: auto;
-}
-
-.resume {
-	line-height: 1.2em;
-}
-
-/**********************************************************
-GENERAL ELEMENT STYLING
-**********************************************************/
-
-h1 {
-	max-width: 50em;
-	font-size: 50px;
-	margin: .4em;
-	font-weight: 250;
-}
-
-h2 {
-	max-width: 25em;
-	font-size: 20px;
-	line-height: 1.2em;
-	margin: .40em;
-	font-weight: 100;
-}
-
-p {
-	line-height: 1.2em;
 }
