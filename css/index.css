@@ -110,7 +110,7 @@ p {
 @media (max-width: 500px) {
   .outer {
 		width: 100vw;
-		height: 90vh;
+		height: auto;
 	}
 
 	.links {
