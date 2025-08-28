@@ -63,8 +63,9 @@ body {
 }
 
 .item>img {
-	height: 70px;
-	filter: invert(19%) sepia(11%) saturate(3722%) hue-rotate(228deg) brightness(93%) contrast(92%);
+	max-width: 80px;
+	max-height: 70px;
+	/* filter: invert(19%) sepia(11%) saturate(3722%) hue-rotate(228deg) brightness(93%) contrast(92%); */
 }
 
 .description {
