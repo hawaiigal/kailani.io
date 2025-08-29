@@ -1,161 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kailani Chu</title>
     <meta name="description" content="Kailani Chu - Senior Security Software Engineer at Netflix">
+    <title>Kailani Chu</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/index.css">
-    
+
     <!-- Preload critical assets -->
     <link rel="preload" href="css/index.css" as="style">
-    <link rel="preload" href="images/resume.svg" as="image">
-    <link rel="preload" href="images/github-mark.svg" as="image">
-    <link rel="preload" href="images/linkedin.png" as="image">
-    
+    <link rel="preload" as="image" href="images/resume.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="images/github-mark.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="images/linkedin.png" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/index.css">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <!-- Header -->
-        <header class="header">
+        <header class="header" role="banner">
             <h1 class="name">Kailani Chu</h1>
-            <nav class="links">
-                <a href="resources/kailani-chu-cv.pdf" class="link" target="_blank" rel="noopener noreferrer">
-                    <img src="images/resume.svg" alt="CV">
-                    <span>CV</span>
-                </a>
-                <a href="resources/kailani-chu-resume.pdf" class="link" target="_blank" rel="noopener noreferrer">
-                    <img src="images/resume.svg" alt="Resume">
-                    <span>Resume</span>
-                </a>
-                <a href="https://github.com/hawaiigal" class="link" target="_blank" rel="noopener noreferrer">
-                    <img src="images/github-mark.svg" alt="GitHub">
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/kailanichu" class="link" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li>
+                        <a href="resources/kailani-chu-cv.pdf" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/resume.svg" alt="" aria-hidden="true">
+                            <span>CV</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/kailani-chu-resume.pdf" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/resume.svg" alt="" aria-hidden="true">
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hawaiigal" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/github-mark.svg" alt="" aria-hidden="true">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kailanichu" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/linkedin.png" alt="" aria-hidden="true">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
-        <!-- Main Content -->
-        <main class="content">
+        <main class="content" role="main">
             <div class="columns">
-                <!-- Left Column -->
                 <div class="column">
-                    <!-- Current Position -->
-                    <section class="section">
-                        <h2 class="section-title">Current Position</h2>
+                    <section class="section" aria-labelledby="current-position">
+                        <h2 class="section-title" id="current-position">Current Position</h2>
                         <div class="section-content">
-                            <div class="company-group">
-                                <span class="company">Netflix</span>
+                            <article class="company-group">
+                                <h3 class="company">Netflix</h3>
                                 <div class="company-roles">
                                     <div class="role-item">
-                                        <span class="role">Senior Security Software Engineer</span>
-                                        <span class="date">Jul 2025 - Present</span>
+                                        <p class="role">Senior Security Software Engineer</p>
+                                        <time class="date">Jul 2025 - Present</time>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </section>
 
-                    <!-- Education -->
-                    <section class="section">
-                        <h2 class="section-title">Education</h2>
+                    <section class="section" aria-labelledby="education">
+                        <h2 class="section-title" id="education">Education</h2>
                         <div class="section-content">
-                            <div class="company-group">
-                                <span class="company">Northeastern University</span>
+                            <article class="company-group">
+                                <h3 class="company">Northeastern University</h3>
                                 <div class="company-roles">
                                     <div class="role-item">
-                                        <span class="role">B.S. in Computer Science</span>
+                                        <p class="role">B.S. in Computer Science</p>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </section>
 
-                    <!-- Teaching Experience -->
-                    <section class="section">
-                        <h2 class="section-title">Teaching Experience</h2>
+                    <section class="section" aria-labelledby="teaching">
+                        <h2 class="section-title" id="teaching">Teaching Experience</h2>
                         <div class="section-content">
-                            <div class="company-group">
-                                <span class="company">Northeastern University</span>
+                            <article class="company-group">
+                                <h3 class="company">Northeastern University</h3>
                                 <div class="company-roles">
                                     <div class="role-item">
-                                        <span class="role">Teaching Assistant, Object Oriented Design</span>
-                                        <span class="date">Jan 2020 - May 2020</span>
+                                        <p class="role">Teaching Assistant, Object Oriented Design</p>
+                                        <time class="date">Jan 2020 - May 2020</time>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Teaching Assistant, Computer Systems</span>
-                                        <span class="date">Jan 2020 - May 2020</span>
+                                        <p class="role">Teaching Assistant, Computer Systems</p>
+                                        <time class="date">Jan 2020 - May 2020</time>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Teaching Assistant, Introduction to Embedded Design</span>
-                                        <span class="date">Sep 2019 - Dec 2019</span>
+                                        <p class="role">Teaching Assistant, Introduction to Embedded Design</p>
+                                        <time class="date">Sep 2019 - Dec 2019</time>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </section>
-
                 </div>
 
-                <!-- Right Column -->
                 <div class="column">
-                    <!-- Past Roles -->
-                    <section class="section">
-                        <h2 class="section-title">Past Roles</h2>
+                    <section class="section" aria-labelledby="past-roles">
+                        <h2 class="section-title" id="past-roles">Past Roles</h2>
                         <div class="section-content past-roles">
-                            <!-- GitHub -->
-                            <div class="company-group">
-                                <span class="company">GitHub</span>
+                            <article class="company-group">
+                                <h3 class="company">GitHub</h3>
                                 <div class="company-roles">
                                     <div class="role-item">
-                                        <span class="role">Software Engineer, Code Search</span>
-                                        <span class="date">Dec 2024 - Present</span>
+                                        <p class="role">Software Engineer, Code Search</p>
+                                        <time class="date">Dec 2024 - Present</time>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Software Engineer, Security Products</span>
-                                        <span class="date">Feb 2022 - Dec 2024</span>
+                                        <p class="role">Software Engineer, Security Products</p>
+                                        <time class="date">Feb 2022 - Dec 2024</time>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
-                            <!-- Google -->
-                            <div class="company-group">
-                                <span class="company">Google</span>
+                            <article class="company-group">
+                                <h3 class="company">Google</h3>
                                 <div class="company-roles">
                                     <div class="role-item">
-                                        <span class="role">Software Engineer, Google Payments</span>
-                                        <span class="date">Aug 2021 - Feb 2022</span>
+                                        <p class="role">Software Engineer, Google Payments</p>
+                                        <time class="date">Aug 2021 - Feb 2022</time>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Software Engineer, Cloud Platforms</span>
-                                        <span class="date">Jul 2020 - Aug 2021</span>
+                                        <p class="role">Software Engineer, Cloud Platforms</p>
+                                        <time class="date">Jul 2020 - Aug 2021</time>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Software Engineering Intern,<br>Cloud Platforms</span>
-                                        <span class="date">May 2019 - Aug 2019</span>
+                                        <p class="role">Software Engineering Intern, Cloud Platforms</p>
+                                        <time class="date">May 2019 - Aug 2019</time>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </section>
                 </div>
             </div>
         </main>
     </div>
-    
-    <!-- Floating Contact Button -->
+
     <a href="mailto:hello@kailani.io" class="floating-contact" aria-label="Contact via email">
-        <img src="images/email.svg" alt="Email" class="floating-contact-icon">
+        <img src="images/email.svg" alt="" aria-hidden="true" class="floating-contact-icon">
         <span class="floating-contact-text">Contact Me</span>
     </a>
 </body>
+
 </html>
