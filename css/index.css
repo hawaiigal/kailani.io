@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-  --primary-color: #2d3436;
-  --background-color: #ffffff;
-  --accent-color: #6c5ce7;
-  --text-color: #2d3436;
+  --primary-color: #2d3436;    /* Dark gray */
+  --background-color: #ffffff; /* White */
+  --accent-color: #6c5ce7;    /* Purple accent */
+  --text-color: #2d3436;      /* Dark gray */
   --spacing-unit: 1rem;
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
