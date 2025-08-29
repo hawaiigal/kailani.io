@@ -25,6 +25,10 @@
         <header class="header">
             <h1 class="name">Kailani Chu</h1>
             <nav class="links">
+                <a href="resources/kailani-chu-cv.pdf" class="link" target="_blank" rel="noopener noreferrer">
+                    <img src="images/resume.svg" alt="CV">
+                    <span>CV</span>
+                </a>
                 <a href="resources/kailani-chu-resume.pdf" class="link" target="_blank" rel="noopener noreferrer">
                     <img src="images/resume.svg" alt="Resume">
                     <span>Resume</span>
@@ -48,29 +52,58 @@
                     <!-- Current Position -->
                     <section class="section">
                         <h2 class="section-title">Current Position</h2>
-                        <p class="section-content">
-                            <span class="company">Netflix</span>
-                            <span class="role">Senior Security Software Engineer</span>
-                            <span class="date">Jul 2025 - Present</span>
-                        </p>
+                        <div class="section-content">
+                            <div class="company-group">
+                                <span class="company">Netflix</span>
+                                <div class="company-roles">
+                                    <div class="role-item">
+                                        <span class="role">Senior Security Software Engineer</span>
+                                        <span class="date">Jul 2025 - Present</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- Education -->
                     <section class="section">
                         <h2 class="section-title">Education</h2>
-                        <p class="section-content">
-                            <span class="company">Northeastern University</span>
-                            <span>B.S. in Computer Science</span>
-                        </p>
+                        <div class="section-content">
+                            <div class="company-group">
+                                <span class="company">Northeastern University</span>
+                                <div class="company-roles">
+                                    <div class="role-item">
+                                        <span class="role">B.S. in Computer Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
-                    <!-- Contact -->
-                    <section class="section contact">
-                        <h2 class="section-title">Contact</h2>
-                        <p class="section-content">
-                            <a href="mailto:hello@kailani.io" class="email-link">hello@kailani.io</a>
-                        </p>
+                    <!-- Teaching Experience -->
+                    <section class="section">
+                        <h2 class="section-title">Teaching Experience</h2>
+                        <div class="section-content">
+                            <div class="company-group">
+                                <span class="company">Northeastern University</span>
+                                <div class="company-roles">
+                                    <div class="role-item">
+                                        <span class="role">Teaching Assistant, Object Oriented Design</span>
+                                        <span class="date">Jan 2020 - May 2020</span>
+                                    </div>
+                                    <div class="role-item">
+                                        <span class="role">Teaching Assistant, Computer Systems</span>
+                                        <span class="date">Jan 2020 - May 2020</span>
+                                    </div>
+                                    <div class="role-item">
+                                        <span class="role">Teaching Assistant, Introduction to Embedded Design</span>
+                                        <span class="date">Sep 2019 - Dec 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
+
                 </div>
 
                 <!-- Right Column -->
@@ -81,7 +114,7 @@
                         <div class="section-content past-roles">
                             <!-- GitHub -->
                             <div class="company-group">
-                                <h3 class="company">GitHub</h3>
+                                <span class="company">GitHub</span>
                                 <div class="company-roles">
                                     <div class="role-item">
                                         <span class="role">Software Engineer, Code Search</span>
@@ -96,7 +129,7 @@
 
                             <!-- Google -->
                             <div class="company-group">
-                                <h3 class="company">Google</h3>
+                                <span class="company">Google</span>
                                 <div class="company-roles">
                                     <div class="role-item">
                                         <span class="role">Software Engineer, Google Payments</span>
@@ -107,7 +140,7 @@
                                         <span class="date">Jul 2020 - Aug 2021</span>
                                     </div>
                                     <div class="role-item">
-                                        <span class="role">Software Engineering Intern, Cloud Platforms</span>
+                                        <span class="role">Software Engineering Intern,<br>Cloud Platforms</span>
                                         <span class="date">May 2019 - Aug 2019</span>
                                     </div>
                                 </div>
@@ -118,5 +151,11 @@
             </div>
         </main>
     </div>
+    
+    <!-- Floating Contact Button -->
+    <a href="mailto:hello@kailani.io" class="floating-contact" aria-label="Contact via email">
+        <img src="images/email.svg" alt="Email" class="floating-contact-icon">
+        <span class="floating-contact-text">Contact Me</span>
+    </a>
 </body>
 </html>
