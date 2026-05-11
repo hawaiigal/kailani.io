@@ -4,8 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kailani Chu - Senior Security Software Engineer at Netflix">
+    <meta name="description" content="Senior security software engineer at Netflix focused on vulnerability remediation at scale. Previously GitHub, Google.">
     <title>Kailani Chu</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Kailani Chu">
+    <meta property="og:description" content="Senior security software engineer at Netflix focused on vulnerability remediation at scale. Previously GitHub, Google.">
+    <meta property="og:url" content="https://kailani.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kailani Chu">
+    <meta name="twitter:description" content="Senior security software engineer at Netflix focused on vulnerability remediation at scale. Previously GitHub, Google.">
+
+    <!-- Apply stored theme before paint to prevent flash -->
+    <script>var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -59,11 +71,18 @@
                             <span>LinkedIn</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:hello@kailani.io" class="nav-link">
+                            <img src="images/email.svg" alt="" aria-hidden="true">
+                            <span>Email</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main class="content" role="main">
+            <p class="bio-strip">Senior security software engineer at Netflix focused on vulnerability remediation at scale. Previously built security and code search products at GitHub and Google, with experience spanning distributed systems (Go, Rust, Java) to Linux internals and embedded devices.</p>
             <div class="columns">
                 <div class="column">
                     <section class="section" aria-labelledby="current-position">
@@ -89,6 +108,7 @@
                                 <div class="company-roles">
                                     <div class="role-item">
                                         <p class="role">B.S. in Computer Science</p>
+                                        <time class="date">2020</time>
                                     </div>
                                 </div>
                             </article>
@@ -128,7 +148,7 @@
                                 <div class="company-roles">
                                     <div class="role-item">
                                         <p class="role">Software Engineer, Code Search</p>
-                                        <time class="date">Dec 2024 - Present</time>
+                                        <time class="date">Dec 2024 - Jul 2025</time>
                                     </div>
                                     <div class="role-item">
                                         <p class="role">Software Engineer, Security Products</p>
@@ -161,10 +181,41 @@
         </main>
     </div>
 
-    <a href="mailto:hello@kailani.io" class="floating-contact" aria-label="Contact via email">
-        <img src="images/email.svg" alt="" aria-hidden="true" class="floating-contact-icon">
-        <span class="floating-contact-text">Contact Me</span>
-    </a>
+    <button id="theme-toggle" class="floating-contact" aria-label="Switch to dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <span class="floating-contact-text">Dark</span>
+    </button>
+    <script>
+        (function () {
+            var btn = document.getElementById('theme-toggle');
+            var root = document.documentElement;
+
+            function isDark() {
+                var t = root.getAttribute('data-theme');
+                if (t === 'dark') return true;
+                if (t === 'light') return false;
+                return window.matchMedia('(prefers-color-scheme: dark)').matches;
+            }
+
+            function update() {
+                var dark = isDark();
+                btn.querySelector('.icon-sun').style.display = dark ? '' : 'none';
+                btn.querySelector('.icon-moon').style.display = dark ? 'none' : '';
+                btn.querySelector('.floating-contact-text').textContent = dark ? 'Light' : 'Dark';
+                btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+            }
+
+            btn.addEventListener('click', function () {
+                var next = isDark() ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                update();
+            });
+
+            update();
+        })();
+    </script>
 </body>
 
 </html>
