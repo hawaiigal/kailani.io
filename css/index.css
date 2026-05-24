@@ -220,6 +220,57 @@ body {
   margin-top: var(--space-xxs);
 }
 
+/* Projects Section
+   ========================================================================== */
+.projects-section {
+  margin-top: var(--space-xxl);
+  margin-bottom: 0;
+}
+
+.projects-grid {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.project-card {
+  flex: 1;
+  background-color: var(--color-accent-transparent);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+
+.project-card-name {
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-card-name::after {
+  content: ' ↗';
+  font-size: 0.85em;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.project-card-name:hover {
+  color: var(--color-accent);
+}
+
+.project-card-name:hover::after {
+  opacity: 1;
+}
+
+.project-card-desc {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
 /* Past Roles Specific Components
    ========================================================================== */
 .past-roles {
@@ -356,6 +407,10 @@ body {
   .section-title {
     font-size: var(--font-size-base);
     margin-bottom: var(--space-sm);
+  }
+
+  .projects-grid {
+    flex-direction: column;
   }
 
   .floating-contact {
